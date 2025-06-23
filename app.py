@@ -36,7 +36,7 @@ col2.metric("💀 Total Kematian", int(filtered["new_deaths"].sum()))
 
 # Grafik Interaktif
 if not filtered.empty:
-    st.subheader("📈 Grafik Kematian Harian (Interaktif)")
+    st.subheader("📈 Grafik Kematian Harian")
     fig = px.line(
         filtered,
         x="date",
